@@ -8,12 +8,19 @@ import logo from "@/assets/logo.svg";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
 import Nav from "./Nav";
+import Socials from "./Socials";
 
 const Header = () => {
   const [isShowing, setIsShowing] = useState(false);
   return (
     <header className="pb-6 xl:pb-[50px] fixed z-40 w-full bg-accent-100">
-      <div className="bg-secondary-100 mb-6 xl:mb-[50px] xl:h-[50px] py-4 xl:py-0"></div>
+      <div className="bg-secondary-100 mb-6 xl:mb-[50px] xl:h-[50px] py-4 xl:py-0 flex justify-center">
+        <Socials
+          containerStyles="hidden text-white xl:flex justify-center
+        items-center  gap-10 text-xl"
+        />
+      </div>
+
       <div className="container mx-auto flex items-center justify-between px-6">
         <div>
           <Link href="/">
