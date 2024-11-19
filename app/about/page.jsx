@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import image from "@/assets/about/img.jpg";
 import StatsItem from "@/components/ui/StatsItem";
+import Link from "next/link";
 
 const AboutPage = () => {
   return (
@@ -54,7 +55,9 @@ const AboutPage = () => {
                 />
               </div>
             </div>
-            <button className="btn mx-auto xl:mx-0">Contact Us</button>
+            <button className="btn mx-auto xl:mx-0">
+              <Link href="/contact">Contact Us</Link>
+            </button>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import homeImage from "@/assets/home/img.png";
 import ModalVideo from "@/components/ui/ModalVideo";
+import Link from "next/link";
 const Home = () => {
   return (
     <motion.section
@@ -31,7 +32,9 @@ const Home = () => {
               customized care for radiant skin
             </p>
             <div className="flex flex-col items-center gap-6 max-w-max mx-auto">
-              <button className="btn btn-lg">Book an appointment</button>
+              <button className="btn btn-lg">
+                <Link href="/contact">Book an appointment</Link>
+              </button>
             </div>
             <div className="xl:flex justify-center items-center">
               <ModalVideo />
