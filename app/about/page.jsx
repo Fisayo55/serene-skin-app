@@ -5,9 +5,6 @@ import Image from "next/image";
 import image from "@/assets/about/img.jpg";
 import StatsItem from "@/components/ui/StatsItem";
 
-export const metadata = {
-  title: "Serene / About",
-};
 const AboutPage = () => {
   return (
     <motion.section

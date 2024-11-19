@@ -3,9 +3,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import image from "@/assets/treatments/img.jpg";
 
-export const metadata = {
-  title: "Serene / treatment",
-};
 const Treatments = () => {
   return (
     <motion.section

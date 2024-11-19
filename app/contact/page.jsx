@@ -5,9 +5,6 @@ import Image from "next/image";
 import image from "@/assets/contact/pin.svg";
 import phone from "@/assets/contact/phone.svg";
 import email from "@/assets/contact/email.svg";
-export const metadata = {
-  title: "Serene /contact",
-};
 
 const Contact = () => {
   return (
